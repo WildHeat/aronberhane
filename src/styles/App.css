@@ -11,16 +11,16 @@ html {
 :root {
   --color-dark: #0b0b18;
   --color-light: #f2f2f9;
-  --color-text: #0b0b18;
-  --color-background: #f2f2f9;
+  --color-text: #fafafa;
+  --color-background: #0f101f;
   --color-primary: #3a41fc;
   --color-secondary: #d7c3a7;
   --color-accent: #aa4ff4;
 
-  --fs-xl: clamp(2.5rem, 3vw + 1rem, 4rem);
+  --fs-xl: clamp(2rem, 2.5vw + 1rem, 3rem);
   --fs-400: 1rem;
-  --fs-500: 1.5rem;
-  --fs-600: 2rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.5rem;
 }
 
 @media (min-width: 40em) {
@@ -89,7 +89,11 @@ body {
 }
 
 .app-container {
+  padding: 15vh 15vh 0 0;
   max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .project section {

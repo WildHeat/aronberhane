@@ -7,7 +7,10 @@ const Profile = () => {
         <div className="me-image"></div>
       </div>
       <h1>Aron Berhane</h1>
-      <p>A full-stack dev that compiles dreams into code.</p>
+      <p>
+        A full-stack dev that compiles dreams into code. I'm happy you're here
+        and I hope you enjoy you're stay.
+      </p>
     </div>
   );
 };

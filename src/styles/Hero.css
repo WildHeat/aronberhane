@@ -1,29 +1,34 @@
 .hero {
   display: flex;
+  flex-direction: column;
   gap: 4em 7rem;
-  margin: auto;
-  /* margin-top: 3em; */
-
-  padding: 2rem 20%;
+  /* margin: auto; */
   color: var(--color-light);
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* Optional: enables wrapping on smaller screens */
-  background-color: var(--color-primary);
+  text-align: left;
+
+  flex-wrap: wrap;
 }
 
 .profile-container {
+  max-width: 30%;
   height: fit-content;
   position: sticky;
   top: 100px;
   padding: 2em;
   border-radius: 2em;
-  background-color: var(--color-dark);
+  background-color: var(--color-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.profile-container p {
+  margin: auto;
+  text-align: center;
+  max-width: 30ch;
+  margin-top: 5em;
+  font-size: var(--fs-400);
 }
 
 @media (max-width: 1009px) {
@@ -33,18 +38,17 @@
 }
 
 .small-profile-container {
-  /* flex: 2; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   min-width: 300px; /* optional safety */
 }
 
 .image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .me-image {
@@ -59,16 +63,16 @@
 }
 
 .small-profile-container h1 {
-  /* font-size: 6rem; */
+  font-size: 6rem;
   line-height: 0.6em;
   color: var(--color-light);
   margin: 0;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.3em;
   width: fit-content;
 }
 
 .small-profile-container h1 span {
-  color: var(--color-dark);
+  color: var(--color-primary);
 }
 
 .small-profile-text {
@@ -78,8 +82,28 @@
   max-width: 50ch;
 }
 
-@media (max-width: 768px) {
-  .small-profile-text {
-    text-align: center;
-  }
+.numbers-container {
+  display: flex;
+  gap: 20%;
+}
+
+.box {
+  padding: 1em 2em;
+  /* margin: auto;  */
+  border-radius: 0.5em;
+}
+
+.box1 {
+  background-color: var(--color-primary);
+}
+
+.box2 {
+  color: var(--color-light);
+  background-color: var(--color-accent);
+}
+
+.addtional-boxes {
+  display: flex;
+  justify-content: start;
+  gap: 10%;
 }

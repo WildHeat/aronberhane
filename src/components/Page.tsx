@@ -8,15 +8,6 @@ const Page = () => {
   return (
     <div className="app-container">
       <Hero />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
       <Projects />
       <ContactForm />
     </div>
